@@ -3,8 +3,7 @@ import Quote from './Quote';
 
 export default function Quotes(props) {
     const [number, setNumber] = useState(0);
-    console.log(number)
-    // console.log(props.quotes)
+    
     return (
         <div className="App-header">
             
