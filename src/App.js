@@ -1,5 +1,9 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
 import React, { useEffect, useState } from "react";
+import AppNav from './components/AppNav';
 
 import Loader from './components/Loader';
 import Quotes from './components/Quotes';
@@ -38,14 +42,16 @@ function App() {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return (
-          <div className="App-header">
+          <div className="background">
+            <AppNav />
             <Loader />
           </div>
     )
   } else {
     return (
-      <div>
-        <Quotes quotes={items}/>
+      <div className="background">
+        <AppNav />
+        <Quotes quotes={items} />
       </div>
     );
   }

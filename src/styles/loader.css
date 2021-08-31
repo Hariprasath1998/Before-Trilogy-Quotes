@@ -10,8 +10,9 @@
     width: 100%;
     display: flex;
     position: fixed;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .loader-text{
