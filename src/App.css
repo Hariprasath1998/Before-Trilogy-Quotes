@@ -5,7 +5,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-
+html, body {
+  margin:0px;
+  height:100%;
+}
 
 .App {
   text-align: center;
@@ -60,6 +63,9 @@
   #author{
     font-size: 40px;
   }
+  #buttonContainer{
+    margin-bottom: 100px;
+  }
 }
 
 @keyframes quoteAnimation {
@@ -74,7 +80,7 @@
 }
 
 #buttonContainer{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   flex-grow: 0;
   width: 100%;
   text-align: center;
