@@ -1,0 +1,39 @@
+@font-face {
+    font-family: surfingCapital;
+    src: url('../Surfing\ Capital.ttf');
+  }
+  
+
+
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-text{
+  font-family: surfingCapital;
+  font-size: 7vw;
+  animation: pulse 3s infinite ease-in-out;
+  letter-spacing: 3px;
+}
+
+
+
+@keyframes pulse {
+0% {
+    transform: scale(0.99);
+    opacity: 0.1;
+}
+50%{
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+    transform: scale(0.99);
+    opacity: 0.1;
+}
+}
